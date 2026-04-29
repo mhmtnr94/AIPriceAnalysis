@@ -42,22 +42,31 @@ This project demonstrates an end-to-end data pipeline and web architecture. It t
 
 ### 1. Backend Setup
 Navigate to the root directory and install the required Python packages:
-```bash
+```
 pip install pandas openpyxl fastapi uvicorn
-
+```
 First, run the data analysis script to clean the data and build the SQL database:
+```
 python analysis.py
-
+```
 Then, start the FastAPI server:
+```
 uvicorn main:app --reload
+```
 The API will be available at http://127.0.0.1:8000
 
-2. Frontend Setup
+### 2. Frontend Setup
 Open a new terminal window, navigate to the frontend directory, and install the dependencies:
+```
 cd frontend
+```
+```
 npm install
+```
 
 Start the Vite development server:
+```
 npm run dev
+```
 The React app will be available at http://localhost:5173
 
